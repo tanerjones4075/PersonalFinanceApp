@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/tannerjones4075/transactionRestAPI/pkg/handlers"
+	"github.com/tannerjones4075/PersonalFinanceApp/transactionRestAPI/pkg/handlers"
 )
 
 func homePage(w http.ResponseWriter, r *http.Request) {
