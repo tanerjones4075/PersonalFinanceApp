@@ -1,7 +1,7 @@
 package mocks
 
 import (
-	"github.com/tanerjones4075/PersonalFinanceApp/transactionRestApi/pkg/models"
+	"github.com/tannerjones4075/PersonalFinanceApp/transactionRestApi/pkg/models"
 
 ) 
 var Articles = []models.Transaction{

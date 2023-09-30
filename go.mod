@@ -1,4 +1,4 @@
-module github.com/tannerjones4075/TransactionsRestApi
+module github.com/tannerjones4075/PersonalFinanceApp
 
 go 1.16
 
