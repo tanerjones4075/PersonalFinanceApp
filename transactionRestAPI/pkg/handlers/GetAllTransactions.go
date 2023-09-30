@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/tannerjones4075/TransactionsRestApi/pkg/mocks"
+	"github.com/tannerjones4075/PersonalFinanceApp/TransactionsRestApi/pkg/mocks"
 )
 
 func GetAllTransactions(w http.ResponseWriter, r *http.Request) {

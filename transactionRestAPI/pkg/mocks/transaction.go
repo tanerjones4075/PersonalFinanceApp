@@ -1,6 +1,6 @@
 package mocks
 
-import "github.com/tannerjones4075/TransactionRestApi/pkg/models"
+import "github.com/tannerjones4075/PersonalFinanceApp/TransactionRestApi/pkg/models"
 
 var Articles = []models.Transaction{
 	{Id: "1", TransDate: "01/1/2023", Merchant: "Amazon", Amount: 100, AccountNumber 8817},
