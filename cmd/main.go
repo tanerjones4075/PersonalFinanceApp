@@ -22,6 +22,7 @@ func handleRequests() {
 	myRouter.HandleFunc("/transaction/{id}", handlers.GetTransaction).Methods(http.MethodGet)
 	myRouter.HandleFunc("/transaction/{id}", handlers.UpdateTransaction).Methods(http.MethodPut)
 	myRouter.HandleFunc("/transaction", handlers.AddTransaction).Methods(http.MethodPost)
+	myRouter.HandleFunc("/transaction/{id}", handlers.DeleteTransaction).Methods(http.MethodDelete)
 	log.Fatal(http.ListenAndServe(":8080", myRouter))
 }
 

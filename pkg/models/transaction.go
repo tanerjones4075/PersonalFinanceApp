@@ -6,4 +6,7 @@ type Transaction struct {
 	Merchant      string  `json:"Merchant"`
 	Amount        float64 `json:"Amount"`
 	AccountNumber int     `json:"Account Number"`
+	Category      string  `json:"Category"`
 }
+
+// TODO: Add categories
