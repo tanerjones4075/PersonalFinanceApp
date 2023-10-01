@@ -18,13 +18,6 @@ func handleRequests() {
 	// create a new instance of a mux router
 	myRouter := mux.NewRouter().StrictSlash(true)
 	myRouter.HandleFunc("/", homePage)
-	log.Fatal(http.ListenAndServe(":8080", myRouter))
-}
-
-func handleRequests() {
-	// create a new instance of a mux router
-	myRouter := mux.NewRouter().StrictSlash(true)
-	myRouter.HandleFunc("/", homePage)
 	myRouter.HandleFunc("/transactions", handlers.GetAllTransactions).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(":8080", myRouter))
 }
