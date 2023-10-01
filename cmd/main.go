@@ -19,6 +19,9 @@ func handleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
 	myRouter.HandleFunc("/", homePage)
 	myRouter.HandleFunc("/transactions", handlers.GetAllTransactions).Methods(http.MethodGet)
+	myRouter.HandleFunc("/transaction/{id}", handlers.GetTransaction).Methods(http.MethodGet)
+	myRouter.HandleFunc("/transaction/{id}", handlers.UpdateTransaction).Methods(http.MethodPut)
+	myRouter.HandleFunc("/transaction", handlers.AddTransaction).Methods(http.MethodPost)
 	log.Fatal(http.ListenAndServe(":8080", myRouter))
 }
 
